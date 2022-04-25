@@ -1,25 +1,31 @@
 :root {
-    /* bagrundsfarver */
-    --primary-bgcolor: #F3B453;
-    --secondary-bgcolor: #203E68;
+  /* bagrundsfarver */
+  --primary-bgcolor: #f3b453;
+  --secondary-bgcolor: #203e68;
 
-    /* menu-baggrundsfarver */
-    --primary-menucolor:#E35F59;
-    --secondary-menucolor:#203E68;
-    --third-menucolor:#F3B453;
+  /* menu-baggrundsfarver */
+  --primary-menucolor: #e35f59;
+  --secondary-menucolor: #203e68;
+  --third-menucolor: #f3b453;
 
-    /* burgermenu-ikon-farve */
-    --primary-burgermenu:#F6F56C;
+  /* burgermenu-ikon-farve */
+  --primary-burgermenu: #f6f56c;
 
-    /* gradientfarver */
-    --primary-gradientcolor:#E35F59;
-    --seconday-gradientcolor:#F3B453;
+  /* gradientfarver */
+  --primary-gradientcolor: #e35f59;
+  --seconday-gradientcolor: #f3b453;
 
-    /* knap-farver */
-    --primary-buttoncolor:#F6F56C;
-    --secondary-buttoncolor: #F3B453;
-    --third-buttoncolor:#E35F59;
+  /* knap-farver */
+  --primary-buttoncolor: #f6f56c;
+  --secondary-buttoncolor: #f3b453;
+  --third-buttoncolor: #e35f59;
 
-    /* links footer */
-    --primary-a: #F9F9F9;
+  /* links footer */
+  --primary-a: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
