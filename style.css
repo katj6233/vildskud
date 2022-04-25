@@ -65,8 +65,10 @@ a .knap {
   font-size: clamp(0.9rem, 0.86rem + 0.2000000000000001vw, 1.1rem);
 }
 
-a:hover footer {
-  transform: scale(0.5);
+footer a:hover,
+footer li:hover {
+  scale: 1.2;
+  transition: all ease-in 0.1s;
 }
 
 .knap {
