@@ -10,8 +10,8 @@
     <header></header>
 
     <main>
-      <article>
-        <section>
+      <article id="forside_">
+        <section id="forside_forestillinger">
           <div id="for_1">
             <h2>FORESTILLING 01</h2>
             <p><a href="">Find billetter her ► </a></p>
@@ -46,8 +46,26 @@
           </div>
         </section>
         <section>
-          <div>
-            <img src="/img/Vector.png" alt="billetter" />
+          <div id="forside_billetter">
+            <a href=""><img src="/img/billetter_knap.png" alt="billetter" /></a>
+          </div>
+
+          <div id="forside_wrap">
+            <div id="forside_logo">
+              <img src="/img/logo.png" alt="" />
+            </div>
+
+            <div>
+              <h1>21.-22.-23- JULI 2022</h1>
+            </div>
+
+            <div id="forside_knapper">
+              <p><a href="">PROGRAM</a></p>
+              <p><a href="">EVENTS</a></p>
+              <p><a href="">VÆR MED</a></p>
+              <p><a href="">BILLETTER</a></p>
+              <p><a href="">INFO</a></p>
+            </div>
           </div>
         </section>
       </article>
@@ -56,3 +74,38 @@
     <footer></footer>
   </body>
 </html>
+
+<style>
+  #forside_billetter img {
+    width: 120px;
+  }
+
+  body {
+  }
+
+  #forside_billetter {
+    padding: 10px;
+  }
+
+  #forside_wrap {
+    display: grid;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+
+  #forside_forestillinger {
+    display: none;
+  }
+
+  #forside_knapper {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (min-width: 768px) {
+    #forside_ {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
