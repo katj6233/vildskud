@@ -31,12 +31,12 @@
   --secondary-a: #f6f56c;
 
   /* fonte */
-  --h1--:"inter", sans-serif;
-  --h2--:"inter", sans-serif;
-  --h3--:"inter", sans-serif;
-  --h4--:"inter", sans-serif;
-  --p--:"inter", sans-serif;
-  --a--:"inter", sans-serif;
+  --h1--: "inter", sans-serif;
+  --h2--: "inter", sans-serif;
+  --h3--: "inter", sans-serif;
+  --h4--: "inter", sans-serif;
+  --p--: "inter", sans-serif;
+  --a--: "inter", sans-serif;
 }
 
 * {
@@ -48,8 +48,6 @@
 img {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
-=======
 }
 
 /*** fonte ***/
@@ -59,7 +57,6 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 1.9118rem + 0.44099999999999984vw, 2.441rem);
->>>>>>> eab6154129b81ef5acc9611a3253823969a19b67
 }
 
 h3 {
@@ -72,22 +69,6 @@ h4 {
 
 p,
 a {
-<<<<<<< HEAD
-  text-decoration: underline;
-}
-
-a:hover footer {
-  transform: scale(0.5);
-}
-
-.knap {
-  border: none;
-  border-radius: none;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-=======
   font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);
 }
 
@@ -97,7 +78,6 @@ a {
 
 a .knap {
   font-size: clamp(0.9rem, 0.86rem + 0.2000000000000001vw, 1.1rem);
->>>>>>> eab6154129b81ef5acc9611a3253823969a19b67
 }
 
 footer a:hover,
@@ -125,11 +105,7 @@ footer li:hover {
 }
 
 .knap:hover {
-<<<<<<< HEAD
-  -webkit-animation-name: wiggle;
-=======
   animation-name: wiggle;
->>>>>>> eab6154129b81ef5acc9611a3253823969a19b67
   -ms-animation-name: wiggle;
   animation-duration: 1000ms;
   -webkit-animation-duration: 1000ms;
