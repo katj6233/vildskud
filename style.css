@@ -1,0 +1,25 @@
+:root {
+    /* bagrundsfarver */
+    --primary-bgcolor: #F3B453;
+    --secondary-bgcolor: #203E68;
+
+    /* menu-baggrundsfarver */
+    --primary-menucolor:#E35F59;
+    --secondary-menucolor:#203E68;
+    --third-menucolor:#F3B453;
+
+    /* burgermenu-ikon-farve */
+    --primary-burgermenu:#F6F56C;
+
+    /* gradientfarver */
+    --primary-gradientcolor:#E35F59;
+    --seconday-gradientcolor:#F3B453;
+
+    /* knap-farver */
+    --primary-buttoncolor:#F6F56C;
+    --secondary-buttoncolor: #F3B453;
+    --third-buttoncolor:#E35F59;
+
+    /* links footer */
+    --primary-a: #F9F9F9;
+}
