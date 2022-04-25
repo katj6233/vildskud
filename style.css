@@ -23,6 +23,14 @@
   /* links footer farver */
   --primary-a: #f9f9f9;
   --secondary-a: #f6f56c;
+
+  /* fonte */
+  --h1--:"inter", sans-serif;
+  --h2--:"inter", sans-serif;
+  --h3--:"inter", sans-serif;
+  --h4--:"inter", sans-serif;
+  --p--:"inter", sans-serif;
+  --a--:"inter", sans-serif;
 }
 
 * {
@@ -70,6 +78,14 @@ footer a:hover,
 footer li:hover {
   scale: 1.2;
   transition: all ease-in 0.1s;
+}
+
+.link {
+  padding: none;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: none;
 }
 
 .knap {
