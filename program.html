@@ -7,10 +7,21 @@
     <title>Program</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="program_body">
+    <!-- navigation -->
     <header>
-      <img src="img/billetter_knap_program_side.svg" alt="Billet ikon" />
+      <div class="program_header">
+        <div>Dette bliver de tre streger</div>
+        <!-- billet knap -->
+        <div>
+          <a href="billetter.html"
+            ><img src="img/billetter_knap_program_side.svg" alt="Billet ikon"
+          /></a>
+        </div>
+      </div>
     </header>
+
     <main class="program_main">
       <section>
         <h1>PROGRAM.</h1>
@@ -80,6 +91,10 @@
     </footer>
   </body>
   <style>
+    /*** header ***/
+    .program_header {
+      display: flex;
+    }
     .program_body {
       background-color: #203e68;
     }

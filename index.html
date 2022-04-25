@@ -13,42 +13,59 @@
   <body>
     <header></header>
 
+    <!-- VENSTRE SIDE  -->
     <main>
       <article id="forside_">
         <section id="forside_forestillinger">
-          <div id="for_1">
-            <h2>FORESTILLING 01</h2>
-            <p><a href="">Find billetter her ► </a></p>
+          <div id="for_1" class="forside_box">
+            <div>
+              <h2>FORESTILLING 01</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
           </div>
-          <div id="for_2">
-            <h2>FORESTILLING 02</h2>
-            <p><a href="">Find billetter her ► </a></p>
+          <div id="for_2" class="forside_box">
+            <div>
+              <h2>FORESTILLING 02</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
           </div>
-          <div id="for_3">
-            <h2>FORESTILLING 03</h2>
-            <p><a href="">Find billetter her ► </a></p>
-          </div>
-
-          <div id="for_4">
-            <h2>FORESTILLING 04</h2>
-            <p><a href="">Find billetter her ► </a></p>
-          </div>
-
-          <div id="for_5">
-            <h2>FORESTILLING 05</h2>
-            <p><a href="">Find billetter her ► </a></p>
+          <div id="for_3" class="forside_box">
+            <div>
+              <h2>FORESTILLING 03</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
           </div>
 
-          <div id="for_6">
-            <h2>FORESTILLING 06</h2>
-            <p><a href="">Find billetter her ► </a></p>
+          <div id="for_4" class="forside_box">
+            <div>
+              <h2>FORESTILLING 04</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
           </div>
 
-          <div id="for_7">
-            <h2>FORESTILLING 07</h2>
-            <p><a href="">Find billetter her ► </a></p>
+          <div id="for_5" class="forside_box">
+            <div>
+              <h2>FORESTILLING 05</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
+          </div>
+
+          <div id="for_6" class="forside_box">
+            <div>
+              <h2>FORESTILLING 06</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
+          </div>
+
+          <div id="for_7" class="forside_box">
+            <div>
+              <h2>FORESTILLING 07</h2>
+              <a href="">Find billetter her ► </a>
+            </div>
           </div>
         </section>
+
+        <!-- HØJRE SIDE -->
         <section>
           <div id="forside_billetter">
             <a href=""><img src="/img/billetter_knap.png" alt="billetter" /></a>
@@ -56,7 +73,7 @@
 
           <div id="forside_wrap">
             <div id="forside_logo">
-              <img src="/img/logo.png" alt="" />
+              <img src="/img/logoo.svg" alt="" />
             </div>
 
             <div id="forside_dato">
@@ -64,15 +81,19 @@
             </div>
 
             <div id="forside_knapper">
-              <a class="knap forside_knap forside_knaptxt" href="">PROGRAM</a>
+              <div id="knap_wrap">
+                <a class="knap forside_knap forside_knaptxt" href="">PROGRAM</a>
 
-              <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
+                <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
 
-              <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
+                <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
 
-              <a class="knap forside_knap forside_knaptxt" href="">BILLETTER</a>
+                <a class="knap forside_knap forside_knaptxt" href=""
+                  >BILLETTER</a
+                >
 
-              <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
+                <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
+              </div>
             </div>
           </div>
         </section>
@@ -100,12 +121,12 @@
   }
 
   #forside_dato {
-    display: inline;
-    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   #forside_logo {
-    width: 250px;
+    width: 300px;
   }
 
   #forside_billetter {
@@ -114,7 +135,7 @@
 
   #forside_wrap {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     padding-top: 3rem;
   }
 
@@ -124,12 +145,49 @@
 
   #forside_knapper {
     gap: 10rem;
+    display: grid;
+    justify-self: center;
   }
 
   @media (min-width: 768px) {
     #forside_ {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    #forside_forestillinger {
+      display: block;
+    }
+
+    .forside_box {
+      height: 8.133rem;
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
+    }
+
+    #for_1 {
+      background-color: var(--third-buttoncolor);
+    }
+
+    #for_2 {
+      background-color: var(--gradient-01);
+    }
+    #for_3 {
+      background-color: var(--gradient-02);
+    }
+    #for_4 {
+      background-color: var(--gradient-03);
+    }
+
+    #for_5 {
+      background-color: var(--gradient-04);
+    }
+    #for_6 {
+      background-color: var(--gradient-05);
+    }
+    #for_7 {
+      background-color: var(--gradient-06);
     }
   }
 </style>
