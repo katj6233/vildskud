@@ -22,6 +22,7 @@
 
   /* links footer */
   --primary-a: #f9f9f9;
+
 }
 
 * {
@@ -34,3 +35,32 @@ img {
     width: 100%;
     height: auto;
 }
+
+a {
+    text-decoration: underline;
+}
+
+a:hover footer {
+    transform: scale(0.5);
+}
+
+.knap {
+    border: none;
+    border-radius: none;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/* VIEWPORT */
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1538px) {}
