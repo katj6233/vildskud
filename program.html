@@ -47,26 +47,58 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- footer -->
+    <footer id="footer">
+      <section class="footer_section">
+        <ul class="footer_div">
+          <!-- kontakt, privatlivspolitik og cookiepolitik footer -->
+          <li>
+            <a href="">Kontakt os</a>
+          </li>
+          <li>
+            <a href="">privatlivspolitik</a>
+          </li>
+          <li>
+            <a href="">Cookiepolitik</a>
+          </li>
+        </ul>
+
+        <!-- 3 sociale medie ikoner -->
+        <div class="footer_SoMe">
+          <!-- facebook -->
+          <a href="https://www.facebook.com/vildskudfestival/" target="_blank">
+            <img src="" alt="Facebook billede" />
+          </a>
+          <!-- instagram -->
+          <a href="https://www.instagram.com/vildskudfestival/" target="_blank">
+            <img src="" alt="Instagram billede" />
+          </a>
+        </div>
+      </section>
+    </footer>
   </body>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-    .program_main {
+    .program_body {
       background-color: #203e68;
     }
-
-    .section_wrapper_programmer {
-      display: flex;
-      justify-content: space-evenly;
+    /*** TABLET ***/
+    @media (min-width: 640px) {
+    }
+    /*** STOR TABLET ***/
+    @media (min-width: 768px) {
+    }
+    /*** LILLE DESK ***/
+    @media (min-width: 1024px) {
+      .section_wrapper_programmer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    /*** STOR DESKTOP ***/
+    @media (min-width: 1280px) {
+    }
+    /*** MEGA STOT DESKTOP ***/
+    @media (min-width: 1536px) {
     }
   </style>
 </html>
