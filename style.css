@@ -53,32 +53,78 @@ a:hover footer {
     display: inline-block;
 }
 
-.knap:hover {
+/* .knap:hover {
     animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+} */
+
+.knap:hover {
+    -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
 }
 
-
-@keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
   
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+@-webkit-keyframes wiggle {
+    0% {
+      -webkit-transform: rotate(5deg);
     }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+    25% {
+      -webkit-transform: rotate(-5deg);
+    }
+    50% {
+      -webkit-transform: rotate(10deg);
+    }
+    75% {
+      -webkit-transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-5deg);
     }
   }
-
+  
+  @-ms-keyframes wiggle {
+    0% {
+      -ms-transform: rotate(1deg);
+    }
+    25% {
+      -ms-transform: rotate(-1deg);
+    }
+    50% {
+      -ms-transform: rotate(1.5deg);
+    }
+    75% {
+      -ms-transform: rotate(-5deg);
+    }
+    100% {
+      -ms-transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(5deg);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
 
 
 /* VIEWPORT */
