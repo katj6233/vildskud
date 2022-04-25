@@ -56,25 +56,20 @@
               <img src="/img/logo.png" alt="" />
             </div>
 
-            <div>
+            <div id="forside_dato">
               <h1>21.-22.-23- JULI 2022</h1>
             </div>
 
             <div id="forside_knapper">
               <a class="knap forside_knap forside_knaptxt" href="">PROGRAM</a>
 
-              <p class="knap forside_knap">
-                <a class="forside_knaptxt" href="">EVENTS</a>
-              </p>
-              <p class="knap forside_knap">
-                <a class="forside_knaptxt" href="">VÆR MED</a>
-              </p>
-              <p class="knap forside_knap">
-                <a class="forside_knaptxt" href="">BILLETTER</a>
-              </p>
-              <p class="knap forside_knap">
-                <a class="forside_knaptxt" href="">INFO</a>
-              </p>
+              <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">BILLETTER</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
             </div>
           </div>
         </section>
@@ -99,11 +94,15 @@
 
   .forside_knaptxt {
     color: var(--secondary-menucolor);
-    text-decoration: none;
+  }
+
+  #forside_dato {
+    display: inline;
+    justify-content: center;
   }
 
   #forside_billetter {
-    padding: 10px;
+    padding: 1rem;
   }
 
   #forside_wrap {
@@ -117,8 +116,7 @@
   }
 
   #forside_knapper {
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 10rem;
   }
 
   @media (min-width: 768px) {
