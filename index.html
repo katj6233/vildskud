@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Vildskud</title>
   </head>
   <body>
     <header></header>
@@ -60,11 +61,20 @@
             </div>
 
             <div id="forside_knapper">
-              <p><a href="">PROGRAM</a></p>
-              <p><a href="">EVENTS</a></p>
-              <p><a href="">VÆR MED</a></p>
-              <p><a href="">BILLETTER</a></p>
-              <p><a href="">INFO</a></p>
+              <a class="knap forside_knap forside_knaptxt" href="">PROGRAM</a>
+
+              <p class="knap forside_knap">
+                <a class="forside_knaptxt" href="">EVENTS</a>
+              </p>
+              <p class="knap forside_knap">
+                <a class="forside_knaptxt" href="">VÆR MED</a>
+              </p>
+              <p class="knap forside_knap">
+                <a class="forside_knaptxt" href="">BILLETTER</a>
+              </p>
+              <p class="knap forside_knap">
+                <a class="forside_knaptxt" href="">INFO</a>
+              </p>
             </div>
           </div>
         </section>
@@ -81,6 +91,15 @@
   }
 
   body {
+    background-color: var(--primary-bgcolor);
+  }
+  .forside_knap {
+    background-color: var(--primary-buttoncolor);
+  }
+
+  .forside_knaptxt {
+    color: var(--secondary-menucolor);
+    text-decoration: none;
   }
 
   #forside_billetter {
