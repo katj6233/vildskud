@@ -56,7 +56,7 @@
             <a href="">Kontakt os</a>
           </li>
           <li>
-            <a href="">privatlivspolitik</a>
+            <a href="">Privatlivspolitik</a>
           </li>
           <li>
             <a href="">Cookiepolitik</a>
@@ -67,11 +67,11 @@
         <div class="footer_SoMe">
           <!-- facebook -->
           <a href="https://www.facebook.com/vildskudfestival/" target="_blank">
-            <img src="" alt="Facebook billede" />
+            <img src="img/facebook.svg" alt="Facebook billede" />
           </a>
           <!-- instagram -->
           <a href="https://www.instagram.com/vildskudfestival/" target="_blank">
-            <img src="" alt="Instagram billede" />
+            <img src="img/instagram.svg" alt="Instagram billede" />
           </a>
         </div>
       </section>
@@ -81,11 +81,70 @@
     .program_body {
       background-color: #203e68;
     }
+
+    /*** footer ***/
+    #footer {
+      margin-top: 2rem;
+    }
+
+    .footer_section,
+    .footer_SoMe {
+      display: flex;
+    }
+
+    .footer_SoMe {
+      place-items: flex-end;
+      gap: 1rem;
+    }
+
+    .footer_section {
+      justify-content: space-evenly;
+    }
+
+    .footer_div li {
+      list-style: none;
+      margin: 0.3rem;
+    }
+
+    .footer_div a {
+      text-decoration: underline;
+      color: #f6f56c;
+      gap: 3rem;
+    }
+
     /*** TABLET ***/
     @media (min-width: 640px) {
+      /*** footer ***/
+      #footer {
+        margin-top: 3rem;
+      }
+
+      .footer_div {
+        display: flex;
+      }
+
+      .footer_SoMe {
+        place-items: baseline;
+        margin-top: -1rem;
+      }
     }
     /*** STOR TABLET ***/
     @media (min-width: 768px) {
+      /*** footer ***/
+      #footer {
+        margin-top: 4rem;
+      }
+
+      .footer_div {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .footer_div li:hover,
+      .footer_SoMe a:hover {
+        scale: 1.1;
+        transition: all ease-in 0.1s;
+      }
     }
     /*** LILLE DESK ***/
     @media (min-width: 1024px) {
