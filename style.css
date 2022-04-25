@@ -36,8 +36,32 @@ img {
     height: auto;
 }
 
+h1 {
+    font-size: clamp(2.5rem, 2.3896rem + 0.552vw, 3.052rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 1.9118rem + 0.44099999999999984vw, 2.441rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 1.4094rem + 0.4530000000000001vw, 1.953rem);
+}
+
+h4 {
+    font-size: clamp(1.3rem, 1.2474rem + 0.2629999999999999vw, 1.563rem);
+}
+
+p {
+    font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);
+}
+
 a {
     text-decoration: underline;
+}
+
+a .knap {
+    font-size: clamp(0.9rem, 0.86rem + 0.2000000000000001vw, 1.1rem);
 }
 
 a:hover footer {
@@ -51,24 +75,20 @@ a:hover footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
-/* .knap:hover {
-    animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-} */
 
 .knap:hover {
-    -webkit-animation-name: wiggle;
-  -ms-animation-name: wiggle;
-  -ms-animation-duration: 1000ms;
-  -webkit-animation-duration: 1000ms;
-  -webkit-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
+    animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    
 }
 
   
