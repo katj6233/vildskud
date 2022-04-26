@@ -85,28 +85,24 @@
               <h1>21.-22.-23. JULI 2022</h1>
             </div>
 
-            <div id="forside_knapper">
-              <div id="knap_wrap">
-                <a class="knap forside_knap forside_knaptxt" href="program.html"
-                  >PROGRAM</a
-                >
+            <div id="knap_wrap">
+              <a class="knap forside_knap forside_knaptxt" href="program.html"
+                >PROGRAM</a
+              >
 
-                <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
+              <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
 
-                <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
+              <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
 
-                <a class="knap forside_knap forside_knaptxt" href=""
-                  >BILLETTER</a
-                >
+              <a class="knap forside_knap forside_knaptxt" href="">BILLETTER</a>
 
-                <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
-              </div>
+              <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
             </div>
           </div>
 
-          <footer id="footer">
+          <footer id="footer" class="forside_footer">
             <section class="footer_section">
-              <ul class="footer_div">
+              <ul class="footer_div footer_forside_farve">
                 <!-- kontakt, privatlivspolitik og cookiepolitik footer -->
                 <li>
                   <a href="">Kontakt os</a>
@@ -126,14 +122,15 @@
                   href="https://www.facebook.com/vildskudfestival/"
                   target="_blank"
                 >
-                  <img src="img/facebook.svg" alt="Facebook billede" />
+                  <img src="img/footer_img_blue.svg" alt="Facebook billede" />
                 </a>
                 <!-- instagram -->
                 <a
+                  class="insta_forside"
                   href="https://www.instagram.com/vildskudfestival/"
                   target="_blank"
                 >
-                  <img src="img/instagram.svg" alt="Instagram billede" />
+                  <img src="img/forside.svg" alt="Instagram billede" />
                 </a>
               </div>
             </section>
@@ -164,21 +161,13 @@
     justify-content: space-evenly;
   }
 
-  .forside_box a {
-    padding-top: 0.5rem;
-  }
-
-  .knap_wrap {
-    display: flex;
-  }
-
   .footer_div li {
     list-style: none;
     margin: 0.3rem;
   }
 
-  .footer_div a {
-    color: #f6f56c;
+  .footer_forside_farve a {
+    color: #203e68;
     gap: 3rem;
   }
 
@@ -186,6 +175,10 @@
 
   #forside_billetter img {
     width: 120px;
+  }
+
+  .forside_box a {
+    padding-top: 0.5rem;
   }
 
   body {
@@ -234,11 +227,6 @@
     display: none;
   }
 
-  #forside_knapper {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   /* ROTERING AF LOGO  */
   .rotate {
     -webkit-animation: rotate 5s normal linear infinite;
@@ -278,17 +266,24 @@
       display: flex;
     }
 
+    #forside_logo {
+      padding-top: 3rem;
+    }
     .footer_SoMe {
       place-items: baseline;
       margin-top: -1rem;
     }
+
+    .forside_footer {
+      padding-top: 5rem;
+    }
+
+    #forside_billetter img {
+      width: 150px;
+    }
   }
 
   @media (min-width: 768px) {
-    #forside_ {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
     #forside_billetter img {
       width: 150px;
     }
@@ -297,20 +292,49 @@
       padding: 1.5rem;
     }
 
-    #forside_forestillinger {
-      display: block;
+    #forside_logo {
+      padding-top: 0rem;
     }
 
-    .forside_box {
-      height: 8.133rem;
-      display: flex;
-      align-items: center;
-      padding-left: 3rem;
+    .forside_footer {
+      padding-top: 5rem;
     }
 
     .forside_boxx a {
       text-decoration: none;
       color: black;
+    }
+
+    /*** footer ***/
+    #footer {
+      margin-top: 4rem;
+    }
+
+    .footer_div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #forside_forestillinger {
+      display: block;
+    }
+
+    .forside_footer {
+      padding-top: 2.5rem;
+    }
+
+    .forside_box {
+      height: 7.55rem;
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
+    }
+
+    #forside_ {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
     #for_1 {
@@ -336,15 +360,18 @@
     #for_7 {
       background-color: var(--gradient-06);
     }
+  }
 
-    /*** footer ***/
-    #footer {
-      margin-top: 4rem;
+  @media (min-width: 1280px) {
+    .forside_box {
+      height: 7.56rem;
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
     }
 
-    .footer_div {
-      display: flex;
-      gap: 1rem;
+    .forside_footer {
+      padding-top: 4.5rem;
     }
   }
 </style>
