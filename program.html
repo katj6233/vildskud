@@ -412,16 +412,34 @@
     /*** generelt ***/
     .program_body {
       padding-inline: 2rem;
+      background-color: #203e68;
     }
+
     /*** header ***/
     .program_header {
       display: flex;
     }
-    .program_body {
-      background-color: #203e68;
+
+    /*** program oversigt i responsivt grid ***/
+    .section_wrapper_programmer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+      margin-bottom: 5rem;
     }
 
-    /*** POPUP ***/
+    /*** program oversigt h1 får den lyserøde farve ***/
+    .program_oversigt h1 {
+      margin-block: 2rem;
+      color: var(--primary-menucolor);
+    }
+
+    /*** teksterne i hvert program oversigt får den orange farve ***/
+    .boks {
+      color: var(--third-menucolor);
+    }
+
+    /*** popup ***/
     .modal {
       max-width: 40ch;
       max-height: 50ch;
@@ -454,6 +472,7 @@
     .open-button-6:hover {
       text-decoration: underline;
     }
+
     .close-button,
     .close-button-1,
     .close-button-2,
@@ -466,6 +485,7 @@
       cursor: pointer;
       text-align: end;
     }
+
     .kryds_titel_luk {
       display: flex;
       justify-content: space-between;
@@ -474,24 +494,6 @@
     .modal_link a {
       color: var(--primary);
       font-family: var(--anchor);
-    }
-
-    /*** teksterne i hvert program oversigt ***/
-    .boks {
-      color: var(--third-menucolor);
-    }
-
-    /*** program oversigt ***/
-    .program_oversigt h1 {
-      margin-block: 2rem;
-      color: var(--primary-menucolor);
-    }
-
-    .section_wrapper_programmer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 35px;
-      margin-bottom: 5rem;
     }
 
     /*** TABLET ***/
