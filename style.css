@@ -21,12 +21,12 @@
   --gradient-05: #de8d60;
   --gradient-06: #e19661;
   --seconday-gradientcolor: #f3b453;
-  --gradient-10: #F0A354;
-  --gradient-20: #EE9B55;
-  --gradient-30: #ED9255;
-  --gradient-40: #EB8956;
-  --gradient-50: #E98157;
-  --gradient-60: #E87957;
+  --gradient-10: #f0a354;
+  --gradient-20: #ee9b55;
+  --gradient-30: #ed9255;
+  --gradient-40: #eb8956;
+  --gradient-50: #e98157;
+  --gradient-60: #e87957;
 
   /* knap-farver */
   --primary-buttoncolor: #f6f56c;
@@ -83,7 +83,7 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);;
+  font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);
   font-family: var(--h4--);
   font-weight: 500;
 }
