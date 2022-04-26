@@ -30,7 +30,7 @@
       <section class="program_oversigt">
         <h1>PROGRAM.</h1>
         <div class="section_wrapper_programmer">
-          <div>
+          <div class="boks">
             <img src="img/img1.webp" alt="Billede" />
             <h2>Skammer du dig nu?</h2>
             <h3>Teater EGOTRIP</h3>
@@ -75,7 +75,7 @@
             </div>
           </dialog>
 
-          <div>
+          <div class="boks">
             <img src="img/img2.webp" alt="Billede" />
             <h2>WISH</h2>
             <h3>Hvem Har Inviteret Odile?</h3>
@@ -133,7 +133,7 @@
             </div>
           </dialog>
 
-          <div>
+          <div class="boks">
             <img src="img/img3.webp" alt="Billede" />
             <h2>Mona Lisa Natten</h2>
             <h3>LOUVRA</h3>
@@ -182,7 +182,7 @@
             </div>
           </dialog>
 
-          <div>
+          <div class="boks">
             <img src="img/img3.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -227,7 +227,7 @@
             </div>
           </dialog>
 
-          <div>
+          <div class="boks">
             <img src="img/img3.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -272,7 +272,7 @@
             </div>
           </dialog>
 
-          <div>
+          <div class="boks">
             <img src="img/img3.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -322,7 +322,7 @@
             </div>
           </dialog>
 
-          <div>
+          <div class="boks">
             <img src="img/img3.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -374,6 +374,7 @@
         </div>
       </section>
     </main>
+
     <!-- footer -->
     <footer id="footer">
       <section class="footer_section">
@@ -403,44 +404,21 @@
         </div>
       </section>
     </footer>
+
     <script src="popup.js"></script>
   </body>
+
   <style>
+    /*** generelt ***/
+    .program_body {
+      padding-inline: 2rem;
+    }
     /*** header ***/
     .program_header {
       display: flex;
     }
     .program_body {
       background-color: #203e68;
-    }
-
-    /*** footer ***/
-    #footer {
-      margin-block: 2rem;
-    }
-
-    .footer_section,
-    .footer_SoMe {
-      display: flex;
-    }
-
-    .footer_SoMe {
-      place-items: flex-end;
-      gap: 1rem;
-    }
-
-    .footer_section {
-      justify-content: space-evenly;
-    }
-
-    .footer_div li {
-      list-style: none;
-      margin: 0.3rem;
-    }
-
-    .footer_div a {
-      color: #f6f56c;
-      gap: 3rem;
     }
 
     /*** POPUP ***/
@@ -464,9 +442,9 @@
     .open-button-4,
     .open-button-5,
     .open-button-6 {
-      color: var(--secondary);
       cursor: pointer;
     }
+
     .open-button:hover,
     .open-button-1:hover,
     .open-button-2:hover,
@@ -498,36 +476,26 @@
       font-family: var(--anchor);
     }
 
+    /*** teksterne i hvert program oversigt ***/
+    .boks {
+      color: var(--third-menucolor);
+    }
+
     /*** program oversigt ***/
     .program_oversigt h1 {
-      margin-left: 2rem;
       margin-block: 2rem;
+      color: var(--primary-menucolor);
     }
 
     .section_wrapper_programmer {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 35px;
-      padding-inline: 2rem;
       margin-bottom: 5rem;
     }
 
     /*** TABLET ***/
     @media (min-width: 640px) {
-      /*** footer ***/
-      #footer {
-        margin-top: 3rem;
-      }
-
-      .footer_div {
-        display: flex;
-      }
-
-      .footer_SoMe {
-        place-items: baseline;
-        margin-top: -1rem;
-      }
-
       /*** popup ***/
       .modal {
         max-width: 50ch;
@@ -537,16 +505,6 @@
     }
     /*** STOR TABLET ***/
     @media (min-width: 768px) {
-      /*** footer ***/
-      #footer {
-        margin-top: 4rem;
-      }
-
-      .footer_div {
-        display: flex;
-        gap: 1rem;
-      }
-
       /*** popup ***/
       .modal {
         max-width: 70ch;
