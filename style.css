@@ -21,6 +21,12 @@
   --gradient-05: #de8d60;
   --gradient-06: #e19661;
   --seconday-gradientcolor: #f3b453;
+  --gradient-10: #F0A354;
+  --gradient-20: #EE9B55;
+  --gradient-30: #ED9255;
+  --gradient-40: #EB8956;
+  --gradient-50: #E98157;
+  --gradient-60: #E87957;
 
   /* knap-farver */
   --primary-buttoncolor: #f6f56c;
@@ -55,20 +61,31 @@ img {
 h1 {
   font-size: clamp(2.5rem, 2.3896rem + 0.552vw, 3.052rem);
   font-family: var(--h1--);
+  font-weight: 600;
 }
 
 h2 {
   font-size: clamp(2rem, 1.9118rem + 0.44099999999999984vw, 2.441rem);
+  font-family: var(--h2--);
+  font-weight: 300;
 }
 
 h3 {
   font-size: clamp(1.5rem, 1.4094rem + 0.4530000000000001vw, 1.953rem);
   font-family: var(--h3--);
+  font-weight: 300;
 }
 
 h4 {
   font-size: clamp(1.3rem, 1.2474rem + 0.2629999999999999vw, 1.563rem);
   font-family: var(--h4--);
+  font-weight: 300;
+}
+
+h5 {
+  font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);;
+  font-family: var(--h4--);
+  font-weight: 500;
 }
 
 p,
@@ -83,6 +100,35 @@ a {
 
 a .knap {
   font-size: clamp(0.9rem, 0.86rem + 0.2000000000000001vw, 1.1rem);
+}
+
+/*** footer ***/
+#footer {
+  margin-block: 2rem;
+}
+
+.footer_section,
+.footer_SoMe {
+  display: flex;
+}
+
+.footer_SoMe {
+  place-items: flex-end;
+  gap: 1rem;
+}
+
+.footer_section {
+  justify-content: space-evenly;
+}
+
+.footer_div li {
+  list-style: none;
+  margin: 0.3rem;
+}
+
+.footer_div a {
+  color: #f6f56c;
+  gap: 3rem;
 }
 
 footer a:hover,
@@ -177,9 +223,31 @@ footer li:hover {
 /* VIEWPORT */
 
 @media (min-width: 640px) {
+  /*** footer ***/
+  #footer {
+    margin-top: 3rem;
+  }
+
+  .footer_div {
+    display: flex;
+  }
+
+  .footer_SoMe {
+    place-items: baseline;
+    margin-top: -1rem;
+  }
 }
 
 @media (min-width: 768px) {
+  /*** footer ***/
+  #footer {
+    margin-top: 4rem;
+  }
+
+  .footer_div {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1280px) {
