@@ -2,6 +2,7 @@
   /* bagrundsfarver */
   --primary-bgcolor: #f3b453;
   --secondary-bgcolor: #203e68;
+  --third-bgcolor: #e35f59;
 
   /* menu-baggrundsfarver */
   --primary-menucolor: #e35f59;
@@ -53,6 +54,7 @@ img {
 /*** fonte ***/
 h1 {
   font-size: clamp(2.5rem, 2.3896rem + 0.552vw, 3.052rem);
+  font-family: var(--h1--);
 }
 
 h2 {
@@ -61,15 +63,18 @@ h2 {
 
 h3 {
   font-size: clamp(1.5rem, 1.4094rem + 0.4530000000000001vw, 1.953rem);
+  font-family: var(--h3--);
 }
 
 h4 {
   font-size: clamp(1.3rem, 1.2474rem + 0.2629999999999999vw, 1.563rem);
+  font-family: var(--h4--);
 }
 
 p,
 a {
   font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);
+  font-family: var(--p--);
 }
 
 a {
