@@ -6,14 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Program</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css">
   </head>
 
   <body class="program_body">
     <!-- navigation -->
-    <header>
-      <div class="program_header">
-        <div>Dette bliver de tre streger</div>
+    <header class="program_header">
+      <div >
+
+        <button class="menuknap" id="menuknap">
+
+          <h1 class="burger">☰</h1>
+          <h2 class="close">X</h2>
+
+        </button>
+
+        <nav id="nav_">
+          <ul id="menu" class="skjult">
+            <li> <a href="program.html">PROGRAM</a> </li>
+            <li> <a href="">EVENTS</a> </li>
+            <li> <a href="">VÆR MED</a> </li>
+            <li> <a href="billetter.html">TICKETS</a> </li>
+            <li> <a href="">INFO</a> </li>
+        
+          </ul>
+        </nav>
+        
+
+      </div>
         <!-- billet knap -->
+
+
         <div>
           <a href="billetter.html"
             ><img src="img/billetter_knap_program_side.svg" alt="Billet ikon"
@@ -457,9 +480,20 @@
     <script src="script/mixitup.min.js" defer></script>
     <script src="script/mixitup-multifilter.min.js" defer></script>
     <script src="script.js" defer></script>
+    <script type="module" src="index.js"></script>
+
   </body>
 
   <style>
+
+
+/* BURGER  */
+
+#menu {
+  padding-top: 10rem;
+}
+
+
     /*** generelt ***/
     .program_body {
       padding-inline: 2rem;

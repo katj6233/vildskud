@@ -1,0 +1,33 @@
+.skjult {
+  /* display: none;
+    transform: scale(0); */
+  transform: translateX(-100);
+  opacity: 0;
+  display: none;
+}
+
+#menuknap {
+  display: inline-block;
+  z-index: 2;
+}
+
+.menuknap.open .burger,
+.menuknap:not(.open) .close {
+  display: none;
+}
+
+#menu {
+  list-style: none;
+  transition: transform 3s;
+  transform-origin: top left;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  background-color: white;
+  z-index: 1;
+  /* padding-left: 7rem;
+    padding-top: ; */
+}
