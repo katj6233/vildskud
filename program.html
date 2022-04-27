@@ -25,8 +25,17 @@
     <main class="program_main">
       <section class="program_oversigt">
         <h1>PROGRAM.</h1>
+        <fieldset>
+          <button type="button" data-sort="default:asc">Tirsdag</button>
+          <button type="button" data-sort="default:desc">Onsdag</button>
+
+          <button type="button" data-sort="name:random">Torsdag</button>
+
+          <button type="button" data-sort="name:asc">Fredag</button>
+          <button type="button" data-sort="name:desc">Lørdag</button>
+        </fieldset>
         <div class="section_wrapper_programmer">
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img1.webp" alt="Billede" />
             <h2>Skammer du dig nu?</h2>
             <h3>Teater EGOTRIP</h3>
@@ -81,7 +90,7 @@
             </div>
           </dialog>
 
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img2.webp" alt="Billede" />
             <h2>WISH</h2>
             <h3>Hvem Har Inviteret Odile?</h3>
@@ -136,7 +145,7 @@
             </div>
           </dialog>
 
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img3.webp" alt="Billede" />
             <h2>Mona Lisa Natten</h2>
             <h3>LOUVRA</h3>
@@ -191,7 +200,7 @@
             </div>
           </dialog>
 
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img4.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -246,7 +255,7 @@
             </div>
           </dialog>
 
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img5.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -301,7 +310,7 @@
             </div>
           </dialog>
 
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img6.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -356,7 +365,7 @@
             </div>
           </dialog>
 
-          <div class="boks">
+          <div class="boks mix">
             <img src="img/img7.webp" alt="" />
             <h2>ET SURT OPSTØD</h2>
             <h3>JUKS</h3>
@@ -445,6 +454,9 @@
     </footer>
 
     <script src="script/popup.js"></script>
+    <script src="script/mixitup.min.js" defer></script>
+    <script src="script/mixitup-multifilter.min.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 
   <style>
