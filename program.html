@@ -22,14 +22,27 @@
         </button>
 
         <nav id="nav_">
-          <ul id="menu" class="skjult">
-            <li> <a href="program.html">PROGRAM</a> </li>
-            <li> <a href="">EVENTS</a> </li>
-            <li> <a href="">VÆR MED</a> </li>
-            <li> <a href="billetter.html">TICKETS</a> </li>
-            <li> <a href="">INFO</a> </li>
+          <div id="menu" class="skjult">
+              <div id="program_logo" class="">
+                <img src="/img/logologo_2.svg" alt="" />
+              </div>
+  
+  
+              <div id="knap_wrap">
+                <a class="knap forside_knap forside_knaptxt" href="program.html"
+                  >PROGRAM</a
+                >
+  
+                <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
+  
+                <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
+  
+                <a class="knap forside_knap forside_knaptxt" href="">BILLETTER</a>
+  
+                <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
+              </div>
+            </div>
         
-          </ul>
         </nav>
         
 
@@ -493,6 +506,14 @@
   padding-top: 10rem;
 }
 
+#program_logo {
+    width: 300px;
+  }
+
+.close {
+  position: fixed;
+  z-index: 100;
+}
 
     /*** generelt ***/
     .program_body {

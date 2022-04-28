@@ -25,9 +25,22 @@
   top: 0;
   left: 0;
   right: 0;
-  width: auto;
-  background-color: white;
+  width: 50%;
+  background-color: #f3b453;
   z-index: 1;
   /* padding-left: 7rem;
     padding-top: ; */
+}
+
+#nav_ {
+  display: grid;
+  justify-content: center;
+}
+
+.forside_knap {
+  background-color: var(--primary-buttoncolor);
+}
+
+#knap_wrap {
+  padding-top: 3rem;
 }
