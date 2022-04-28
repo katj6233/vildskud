@@ -53,13 +53,13 @@
       <section class="program_oversigt">
         <h1>PROGRAM.</h1>
         <fieldset>
-          <button type="button" data-sort="default:asc">Tirsdag</button>
-          <button type="button" data-sort="default:desc">Onsdag</button>
+          <button class="knap" type="button_program" data-sort="default:asc">Tirsdag - 03.08.22</button>
+          <button class="knap" type="button_program" data-sort="default:desc">Onsdag - 04.08.22</button>
 
-          <button type="button" data-sort="name:random">Torsdag</button>
+          <button class="knap" type="button_program" data-sort="name:random">Torsdag - 05.08.22</button>
 
-          <button type="button" data-sort="name:asc">Fredag</button>
-          <button type="button" data-sort="name:desc">Lørdag</button>
+          <button class="knap" type="button_program" data-sort="name:asc">Fredag - 06.08.22</button>
+          <button class="knap" type="button_program" data-sort="name:desc">Lørdag - 07.08.22</button>
         </fieldset>
         <div class="section_wrapper_programmer">
           <div class="boks mix">
@@ -541,6 +541,8 @@
       box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
       z-index: 100;
       padding: 2rem;
+      background-color: var(--primary-bgcolor);
+      color: var(--secondary-bgcolor);
     }
 
     .modal::backdrop {
@@ -588,6 +590,19 @@
     .modal_link a {
       color: var(--primary);
       font-family: var(--anchor);
+    }
+
+    button {
+      background-color: var(--third-menucolor);
+      color: var(--secondary-menucolor);
+      
+    }
+
+   
+
+    fieldset {
+      border: none;
+      margin-block: 1rem;
     }
 
     /*** TABLET ***/
