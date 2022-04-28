@@ -1,45 +1,43 @@
 :root {
   /* bagrundsfarver */
-  --primary-bgcolor: #f3b453;
+  --primary-bgcolor: #ffb341;
   --secondary-bgcolor: #203e68;
-  --third-bgcolor: #e35f59;
+  --third-bgcolor: #ff564d;
 
   /* menu-baggrundsfarver */
-  --primary-menucolor: #e35f59;
+  --primary-menucolor: #ff564d;
   --secondary-menucolor: #203e68;
-  --third-menucolor: #f3b453;
+  --third-menucolor: #ffb341;
 
   /* burgermenu-ikon-farve */
   --primary-burgermenu: #f6f56c;
 
   /* gradientfarver */
-  --primary-gradientcolor: #e35f59;
-  --gradient-01: #d66e5e;
-  --gradient-02: #d8765f;
-  --gradient-03: #da7f5f;
-  --gradient-04: #dc8660;
-  --gradient-05: #de8d60;
-  --gradient-06: #e19661;
-  --seconday-gradientcolor: #f3b453;
-  --gradient-10: #f0a354;
-  --gradient-20: #ee9b55;
-  --gradient-30: #ed9255;
-  --gradient-40: #eb8956;
-  --gradient-50: #e98157;
-  --gradient-60: #e87957;
+  --primary-gradientcolor: #ff564d;
+  --gradient-01: #f7654f;
+  --gradient-02: #f76747;
+  --gradient-03: #fc7442;
+  --gradient-04: #fb7b44;
+  --gradient-05: #fc8747;
+  --gradient-06: #fa944a;
+  --seconday-gradientcolor: #ffb341;
+  --gradient-10: #fa9d40;
+  --gradient-20: #ff953d;
+  --gradient-30: #ff8c3f;
+  --gradient-40: #f57f40;
+  --gradient-50: #ff7b47;
+  --gradient-60: #ff764c;
 
   /* knap-farver */
   --primary-buttoncolor: #f6f56c;
-  --secondary-buttoncolor: #f3b453;
-  --third-buttoncolor: #e35f59;
+  --secondary-buttoncolor: #ffb341;
+  --third-buttoncolor: #ff564d;
 
   /* links footer farver */
   --primary-a: #f9f9f9;
   --secondary-a: #f6f56c;
 
   /* fonte */
-  
-
 
   --h1--: "inter", sans-serif;
   --h2--: "inter", sans-serif;
@@ -49,15 +47,11 @@
   --a--: "inter", sans-serif;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 img {
   width: 100%;
@@ -66,12 +60,10 @@ img {
 
 /*** fonte ***/
 
-
 @font-face {
   font-family: inter;
   src: url(font/inter-variablefont_slntwght-webfont.woff2);
 }
-
 
 h1 {
   font-size: clamp(2.5rem, 2.3896rem + 0.552vw, 3.052rem);
@@ -269,4 +261,8 @@ footer li:hover {
 }
 
 @media (min-width: 1538px) {
+}
+
+.logo.showhide {
+  display: none;
 }

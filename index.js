@@ -11,6 +11,7 @@ function toggleMenu() {
   console.log("toggleMenu");
   document.querySelector("#menu").classList.toggle("skjult");
   document.querySelector("#menuknap").classList.toggle("open");
+  document.querySelector(".logo").classList.toggle("showhide");
 
   // let erSkjult = document.querySelector("#menu").classList.contains("skjult");
 

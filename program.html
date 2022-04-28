@@ -6,42 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Program</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="menu.css" />
   </head>
 
   <body class="program_body">
     <!-- navigation -->
     <header class="program_header">
-      <div >
-
+      <div>
         <button class="menuknap" id="menuknap">
-
-          <h1 class="burger">☰</h1>
-          <h2 class="close">X</h2>
-
+          <h1 class="burger" id="streger">☰</h1>
+          <h1 class="close">X</h1>
         </button>
 
         <nav id="nav_">
-          <ul id="menu" class="skjult">
-            <li> <a href="program.html">PROGRAM</a> </li>
-            <li> <a href="">EVENTS</a> </li>
-            <li> <a href="">VÆR MED</a> </li>
-            <li> <a href="billetter.html">TICKETS</a> </li>
-            <li> <a href="">INFO</a> </li>
-        
-          </ul>
+          <div id="menu" class="skjult">
+            <div id="program_logo" class="">
+              <img src="/img/logologo_2.svg" alt="" />
+            </div>
+
+            <div id="knap_wrap">
+              <a class="knap forside_knap forside_knaptxt" href="program.html"
+                >PROGRAM</a
+              >
+
+              <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">BILLETTER</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
+            </div>
+          </div>
         </nav>
-        
-
       </div>
-        <!-- billet knap -->
+      <!-- billet knap -->
 
-
-        <div>
-          <a href="billetter.html"
-            ><img src="img/billetter_knap_program_side.svg" alt="Billet ikon"
-          /></a>
-        </div>
+      <div class="billet_knap">
+        <a href="billetter.html"
+          ><img src="img/billetter_knap_program_side.svg" alt="Billet ikon"
+        /></a>
       </div>
     </header>
 
@@ -49,13 +53,13 @@
       <section class="program_oversigt">
         <h1>PROGRAM.</h1>
         <fieldset>
-          <button type="button" data-sort="default:asc">Tirsdag</button>
-          <button type="button" data-sort="default:desc">Onsdag</button>
+          <button class="knap" type="button_program" data-sort="default:asc">Tirsdag - 03.08.22</button>
+          <button class="knap" type="button_program" data-sort="default:desc">Onsdag - 04.08.22</button>
 
-          <button type="button" data-sort="name:random">Torsdag</button>
+          <button class="knap" type="button_program" data-sort="name:random">Torsdag - 05.08.22</button>
 
-          <button type="button" data-sort="name:asc">Fredag</button>
-          <button type="button" data-sort="name:desc">Lørdag</button>
+          <button class="knap" type="button_program" data-sort="name:asc">Fredag - 06.08.22</button>
+          <button class="knap" type="button_program" data-sort="name:desc">Lørdag - 07.08.22</button>
         </fieldset>
         <div class="section_wrapper_programmer">
           <div class="boks mix">
@@ -481,18 +485,23 @@
     <script src="script/mixitup-multifilter.min.js" defer></script>
     <script src="script.js" defer></script>
     <script type="module" src="index.js"></script>
-
   </body>
 
   <style>
+    /* BURGER  */
 
+    #menu {
+      padding-top: 10rem;
+    }
 
-/* BURGER  */
+    #program_logo {
+      width: 300px;
+    }
 
-#menu {
-  padding-top: 10rem;
-}
-
+    .close {
+      position: fixed;
+      z-index: 100;
+    }
 
     /*** generelt ***/
     .program_body {
@@ -532,6 +541,8 @@
       box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
       z-index: 100;
       padding: 2rem;
+      background-color: var(--primary-bgcolor);
+      color: var(--secondary-bgcolor);
     }
 
     .modal::backdrop {
@@ -579,6 +590,19 @@
     .modal_link a {
       color: var(--primary);
       font-family: var(--anchor);
+    }
+
+    button {
+      background-color: var(--third-menucolor);
+      color: var(--secondary-menucolor);
+      
+    }
+
+   
+
+    fieldset {
+      border: none;
+      margin-block: 1rem;
     }
 
     /*** TABLET ***/
