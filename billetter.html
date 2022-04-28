@@ -1,276 +1,307 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+
     <title>Vildskud Festival</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <header>
-        <!-- burgermenu -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <header class="program_header billet_header">
+      <div>
+        <button class="menuknap menuknap_billet" id="menuknap">
+          <h1 class="burger" id="streger">☰</h1>
+          <h1 class="close">X</h1>
+        </button>
 
-        <!-- <img src="" alt="/img/logo.png"> -->
+        <nav id="nav_">
+          <div id="menu" class="skjult">
+            <div id="program_logo" class="">
+              <img class="billet_logo" src="/img/logologo_2.svg" alt="" />
+            </div>
+
+            <div id="knap_wrap">
+              <a class="knap forside_knap forside_knaptxt" href="program.html"
+                >PROGRAM</a
+              >
+
+              <a class="knap forside_knap forside_knaptxt" href="">EVENTS</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">VÆR MED</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">BILLETTER</a>
+
+              <a class="knap forside_knap forside_knaptxt" href="">INFO</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- billet knap -->
+
+      <!-- <div class="billet_knap">
+        <a href="billetter.html"
+          ><img src="img/billetter_knap_program_side.svg" alt="Billet ikon"
+        /></a>
+      </div> -->
     </header>
 
     <main>
+      <article class="billet_flex">
+        <!-- venstre sektion -->
+        <section class="venstre">
+          <img class="logo" src="./img/logologo_2.svg" alt="" />
+          <footer id="footer" class="footer_billetter01">
+            <section class="footer_section">
+              <ul class="footer_div">
+                <!-- kontakt, privatlivspolitik og cookiepolitik footer -->
+                <li>
+                  <a href="">Kontakt os</a>
+                </li>
+                <li>
+                  <a href="">Privatlivspolitik</a>
+                </li>
+                <li>
+                  <a href="">Cookiepolitik</a>
+                </li>
+              </ul>
 
-        <article class="billet_flex">
-
-            <!-- venstre sektion -->
-            <section class="venstre">
-                <img class="logo" src="./img/logologo_2.svg" alt="">
-                <footer id="footer" class="footer_billetter01">
-                    <section class="footer_section">
-                      <ul class="footer_div">
-                        <!-- kontakt, privatlivspolitik og cookiepolitik footer -->
-                        <li>
-                          <a href="">Kontakt os</a>
-                        </li>
-                        <li>
-                          <a href="">Privatlivspolitik</a>
-                        </li>
-                        <li>
-                          <a href="">Cookiepolitik</a>
-                        </li>
-                      </ul>
-              
-                      <!-- 3 sociale medie ikoner -->
-                      <div class="footer_SoMe">
-                        <!-- facebook -->
-                        <a href="https://www.facebook.com/vildskudfestival/" target="_blank">
-                          <img src="img/facebook.svg" alt="Facebook billede" />
-                        </a>
-                        <!-- instagram -->
-                        <a href="https://www.instagram.com/vildskudfestival/" target="_blank">
-                          <img src="img/instagram.svg" alt="Instagram billede" />
-                        </a>
-                      </div>
-                    </section>
-                  </footer>
+              <!-- 3 sociale medie ikoner -->
+              <div class="footer_SoMe">
+                <!-- facebook -->
+                <a
+                  href="https://www.facebook.com/vildskudfestival/"
+                  target="_blank"
+                >
+                  <img src="img/facebook.svg" alt="Facebook billede" />
+                </a>
+                <!-- instagram -->
+                <a
+                  href="https://www.instagram.com/vildskudfestival/"
+                  target="_blank"
+                >
+                  <img src="img/instagram.svg" alt="Instagram billede" />
+                </a>
+              </div>
             </section>
+          </footer>
+        </section>
 
-<!-- højre sektion -->
-<section id="scroll" class="hoejre">
-
-<div class="top">
-<div class="top1">
-<h1>BILLET INFO.</h1>
-<p class="top_text">Her ses et overblik over billetter til vildskuds festival:</p>
-</div>
-</div>
-
-<div class="program01">
-    <div class="top1">
-    <h3 class="overskrift">SKAMMER DU DIG?</h3>
-</div>
-
-<div class="flex">
-
-   
-        <div>
-        <ul>
-            <li><p>Varighed: 50Min</p></li>
-            <li><p>Venue: Xenon - Teaterhuset</p></li>
-            <li><address>Rådhusstræde 13, 1466 København</address></li>
-        </ul>
-        
-        <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-    </div>
-
-
-        <div class="pris">
-            <h5>Endagsbillet: 120,-</h5>
-            <h5>Partoutbillet 295,-</h5>
-        </div>
-
-</div>
-
-</div>
-
-    <div class="program02">
-        <div class="top1">
-        <h3 class="overskrift">WISH - HVEM HAR INVITERET ODILE?</h3>
-    </div>
-
-    <div class="flex">
-
-       
-            <div>
-            <ul>
-                <li><p>Varighed: 50Min</p></li>
-                <li><p>Venue: Xenon - Teaterhuset</p></li>
-                <li><address>Rådhusstræde 13, 1466 København</address></li>
-            </ul>
-            
-            <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-        </div>
-
-
-            <div class="pris">
-                <h5>Endagsbillet: 120,-</h5>
-                <h5>Partoutbillet 295,-</h5>
+        <!-- højre sektion -->
+        <section id="scroll" class="hoejre">
+          <div class="top">
+            <div class="top1">
+              <h1>BILLET INFO.</h1>
+              <p class="top_text">
+                Her ses et overblik over billetter til vildskuds festival:
+              </p>
             </div>
-        
+          </div>
 
-
-        
-
-    </div>
-
-    </div>
-
-    <div class="program03">
-        <div class="top1">
-        <h3 class="overskrift">MONA LISA NATTEN - LOUVRA</h3>
-    </div>
-    
-    <div class="flex">
-    
-       
-            <div>
-            <ul>
-                <li><p>Varighed: 50Min</p></li>
-                <li><p>Venue: Xenon - Teaterhuset</p></li>
-                <li><address>Rådhusstræde 13, 1466 København</address></li>
-            </ul>
-            
-            <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-        </div>
-    
-    
-            <div class="pris">
-                <h5>Endagsbillet: 120,-</h5>
-                <h5>Partoutbillet 295,-</h5>
+          <div class="program01">
+            <div class="top1">
+              <h3 class="overskrift">SKAMMER DU DIG?</h3>
             </div>
-    
-    </div>
-    
-    </div>
-    
 
-    <div class="program04">
-        <div class="top1">
-        <h3 class="overskrift">ET SURT OPSTØD - JUKS</h3>
-    </div>
-    
-    <div class="flex">
-    
-       
-            <div>
-            <ul>
-                <li><p>Varighed: 50Min</p></li>
-                <li><p>Venue: Xenon - Teaterhuset</p></li>
-                <li><address>Rådhusstræde 13, 1466 København</address></li>
-            </ul>
-            
-            <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-        </div>
-    
-    
-            <div class="pris">
-                <h5>Endagsbillet: 120,-</h5>
-                <h5>Partoutbillet 295,-</h5>
-            </div>
-    
-    </div>
-    
-    </div>
-
-    <div class="program05">
-        <div class="top1">
-        <h3 class="overskrift">ALT KØRER, IK - PANTA REJE</h3>
-    </div>
-    
-    <div class="flex">
-    
-       
-            <div>
-            <ul>
-                <li><p>Varighed: 50Min</p></li>
-                <li><p>Venue: Xenon - Teaterhuset</p></li>
-                <li><address>Rådhusstræde 13, 1466 København</address></li>
-            </ul>
-            
-            <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-        </div>
-    
-    
-            <div class="pris">
-                <h5>Endagsbillet: 120,-</h5>
-                <h5>Partoutbillet 295,-</h5>
-            </div>
-    
-    </div>
-    
-    </div>
-    <div class="program06">
-        <div class="top1">
-        <h3 class="overskrift">STÅ RET, FÅ RET - TEATER TUNGE TASKER</h3>
-    </div>
-    
-    <div class="flex">
-    
-       
-            <div>
-            <ul>
-                <li><p>Varighed: 50Min</p></li>
-                <li><p>Venue: Xenon - Teaterhuset</p></li>
-                <li><address>Rådhusstræde 13, 1466 København</address></li>
-            </ul>
-            
-            <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-        </div>
-    
-    
-            <div class="pris">
-                <h5>Endagsbillet: 120,-</h5>
-                <h5>Partoutbillet 295,-</h5>
-            </div>
-    
-    </div>
-    
-    </div>
-
-    <div class="program07">
-        <div class="top1">
-            <h3 class="overskrift">Maskeret - Con-front Collective</h3>
-        </div>
-        
-        <div class="flex">
-        
-           
-                <div>
+            <div class="flex">
+              <div>
                 <ul>
-                    <li><p>Varighed: 50Min</p></li>
-                    <li><p>Venue: Xenon - Teaterhuset</p></li>
-                    <li><address>Rådhusstræde 13, 1466 København</address></li>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
                 </ul>
-                
-                <a class="link" href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk" target="_blank">Køb biletter her</a>
-            </div>
-        
-        
-                <div class="pris">
-                    <h5>Endagsbillet: 120,-</h5>
-                    <h5>Partoutbillet 295,-</h5>
-                </div>
-        
-        </div>
-        
-        </div>
-</section>
 
-</article>
-  
-<!-- mobile footer sektion -->
-    <footer id="footer" class="footer_billetter">
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="program02">
+            <div class="top1">
+              <h3 class="overskrift">WISH - HVEM HAR INVITERET ODILE?</h3>
+            </div>
+
+            <div class="flex">
+              <div>
+                <ul>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
+                </ul>
+
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="program03">
+            <div class="top1">
+              <h3 class="overskrift">MONA LISA NATTEN - LOUVRA</h3>
+            </div>
+
+            <div class="flex">
+              <div>
+                <ul>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
+                </ul>
+
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="program04">
+            <div class="top1">
+              <h3 class="overskrift">ET SURT OPSTØD - JUKS</h3>
+            </div>
+
+            <div class="flex">
+              <div>
+                <ul>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
+                </ul>
+
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="program05">
+            <div class="top1">
+              <h3 class="overskrift">ALT KØRER, IK - PANTA REJE</h3>
+            </div>
+
+            <div class="flex">
+              <div>
+                <ul>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
+                </ul>
+
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+          <div class="program06">
+            <div class="top1">
+              <h3 class="overskrift">STÅ RET, FÅ RET - TEATER TUNGE TASKER</h3>
+            </div>
+
+            <div class="flex">
+              <div>
+                <ul>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
+                </ul>
+
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="program07">
+            <div class="top1">
+              <h3 class="overskrift">Maskeret - Con-front Collective</h3>
+            </div>
+
+            <div class="flex">
+              <div>
+                <ul>
+                  <li><p>Varighed: 50Min</p></li>
+                  <li><p>Venue: Xenon - Teaterhuset</p></li>
+                  <li><address>Rådhusstræde 13, 1466 København</address></li>
+                </ul>
+
+                <a
+                  class="link"
+                  href="https://www.yourticket.dk/arrangementer/?s=vildskud%20festival&fbclid=IwAR0KdjK74bhGl-SLxRNBaDkA9LAcKgAZkUuUynzFw9oyu8DwOueg3vxfkQk"
+                  target="_blank"
+                  >Køb biletter her</a
+                >
+              </div>
+
+              <div class="pris">
+                <h5>Endagsbillet: 120,-</h5>
+                <h5>Partoutbillet 295,-</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- mobile footer sektion -->
+      <footer id="footer" class="footer_billetter">
         <section class="footer_section">
           <ul class="footer_div">
             <!-- kontakt, privatlivspolitik og cookiepolitik footer -->
@@ -284,187 +315,172 @@
               <a href="">Cookiepolitik</a>
             </li>
           </ul>
-  
+
           <!-- 3 sociale medie ikoner -->
           <div class="footer_SoMe">
             <!-- facebook -->
-            <a href="https://www.facebook.com/vildskudfestival/" target="_blank">
+            <a
+              href="https://www.facebook.com/vildskudfestival/"
+              target="_blank"
+            >
               <img src="img/facebook.svg" alt="Facebook billede" />
             </a>
             <!-- instagram -->
-            <a href="https://www.instagram.com/vildskudfestival/" target="_blank">
+            <a
+              href="https://www.instagram.com/vildskudfestival/"
+              target="_blank"
+            >
               <img src="img/instagram.svg" alt="Instagram billede" />
             </a>
           </div>
         </section>
       </footer>
-   
+    </main>
 
-
-  
-
-
-</main>
-</body>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
 
 <style>
-.top, header {
+  .top,
+  header {
     background-color: var(--third-bgcolor);
-}
+  }
 
-.top1 {
+  .top1 {
     padding-top: 2rem;
-}
+  }
 
-.top_text {
+  .top_text {
     padding-right: 5rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
-}
+  }
 
-.program01 {
+  .program01 {
     background-color: var(--seconday-gradientcolor);
-    
-}
+  }
 
-.program02 {
+  .program02 {
     background-color: var(--gradient-10);
-    
-}
+  }
 
-.program03 {
+  .program03 {
     background-color: var(--gradient-20);
-    
-}
+  }
 
-
-.program04 {
+  .program04 {
     background-color: var(--gradient-30);
-    
-}
+  }
 
-.program05 {
+  .program05 {
     background-color: var(--gradient-40);
-    
-}
+  }
 
-.program06 {
+  .program06 {
     background-color: var(--gradient-50);
-    
-}
+  }
 
-.program07 {
+  .program07 {
     background-color: var(--gradient-60);
-    
-}
+  }
 
-.top1 {
-        margin-inline: 2rem;
-    }
+  .top1 {
+    margin-inline: 2rem;
+  }
 
-ul {
-        margin-inline: 4rem;
-    }
+  ul {
+    margin-inline: 4rem;
+  }
 
-.overskrift {
+  .overskrift {
     padding-block: 1rem;
-}
-    
-.link {
+  }
+
+  .link {
     text-decoration: underline;
     color: black;
     padding-block: 1rem;
     padding-inline: 3rem;
-}
+  }
 
-.flex {
+  .flex {
     display: flex;
     justify-content: space-around;
-}
+  }
 
-.pris {
+  .pris {
     margin-right: 3rem;
     /* margin-top: 1rem; */
-}
+  }
 
-h5 {
+  h5 {
     margin-block: 1rem;
-}
+  }
 
-.footer_billetter, .venstre, main {
+  .footer_billetter,
+  .venstre,
+  main {
     background-color: var(--secondary-bgcolor);
-}
+  }
 
-.venstre {
+  .venstre {
     display: none;
-}
+  }
 
+  @media (min-width: 640px) {
+  }
 
-@media (min-width: 640px) {
-   
-}
+  @media (min-width: 768px) {
+  }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 1024px) {
-}
-
-@media (min-width: 1280px) {
-
-
-#scroll {
-    width: auto;
-    height: 60%;
-    overflow-y: scroll;
-    scrollbar-color: #e35f59;
-    scrollbar-width: thin;
-}
+  @media (min-width: 1280px) {
+    #scroll {
+      width: auto;
+      height: 60%;
+      overflow-y: scroll;
+      scrollbar-color: #e35f59;
+      scrollbar-width: thin;
+    }
 
     .billet_flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
     .pris {
-        margin-right: 0rem;
-        margin-left: 3rem;
+      margin-right: 0rem;
+      margin-left: 3rem;
     }
 
     .venstre {
-        display: block;
+      display: block;
     }
 
     .footer_billetter {
-        display: none;
+      display: none;
     }
 
     .logo {
-        width: 20rem;
-        place-items: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-block: 13rem;
-        animation: rotation 6s infinite linear;
+      width: 20rem;
+      place-items: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-block: 13rem;
+      animation: rotation 6s infinite linear;
     }
-
-
-}
-
-@media (min-width: 1538px) {
-}
-
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(359deg);
+
+  @media (min-width: 1538px) {
   }
-}
 
-
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 </style>
