@@ -25,8 +25,8 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 50%;
-  background-color: #f3b453;
+  width: 100%;
+  background-color: #e35f59;
   z-index: 1;
   /* padding-left: 7rem;
     padding-top: ; */
@@ -41,6 +41,39 @@
   background-color: var(--primary-buttoncolor);
 }
 
+#menuknap {
+  background: none;
+  border: none;
+  color: var(--primary-burgermenu);
+}
+
+#menuknap h1 {
+  font-size: 5rem;
+}
+
+.program_header {
+  display: grid;
+  justify-content: space-between;
+}
+
 #knap_wrap {
   padding-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+  #menu {
+    list-style: none;
+    transition: transform 3s;
+    transform-origin: top left;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background-color: #f3b453;
+    z-index: 1;
+    /* padding-left: 7rem;
+          padding-top: ; */
+  }
 }
