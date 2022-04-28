@@ -38,8 +38,6 @@
   --secondary-a: #f6f56c;
 
   /* fonte */
-  
-
 
   --h1--: "inter", sans-serif;
   --h2--: "inter", sans-serif;
@@ -49,15 +47,11 @@
   --a--: "inter", sans-serif;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 img {
   width: 100%;
@@ -66,12 +60,10 @@ img {
 
 /*** fonte ***/
 
-
 @font-face {
   font-family: inter;
   src: url(font/inter-variablefont_slntwght-webfont.woff2);
 }
-
 
 h1 {
   font-size: clamp(2.5rem, 2.3896rem + 0.552vw, 3.052rem);
@@ -269,4 +261,8 @@ footer li:hover {
 }
 
 @media (min-width: 1538px) {
+}
+
+.logo.showhide {
+  display: none;
 }
