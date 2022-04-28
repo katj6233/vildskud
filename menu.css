@@ -50,6 +50,10 @@
   border: none;
   color: var(--primary-burgermenu);
 }
+.billet_logo {
+  width: 300px;
+  padding-top: 7rem;
+}
 
 #menuknap h1 {
   font-size: 5rem;
@@ -62,6 +66,12 @@
 
 #knap_wrap {
   padding-top: 3rem;
+}
+
+.menuknap_billet {
+  position: relative;
+  z-index: 100;
+  padding-left: 1rem;
 }
 
 .billet_knap {
@@ -92,8 +102,22 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .billet_header {
+    position: fixed;
+  }
+
+  #nav_ {
+    z-index: 100;
+  }
+}
+
 @media (min-width: 1536px) {
   .billet_knap {
     padding-top: 2.2rem;
+  }
+
+  .logo {
+    position: relative;
   }
 }
